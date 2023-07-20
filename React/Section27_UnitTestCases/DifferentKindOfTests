@@ -1,20 +1,20 @@
-# Different Kind of Automated Test
+#Different Kind of Automated Test
 
 1.Unit Test
 2.Integration Test
 3.End to End Test
 
-## 1.Unit Test
+##1.Unit Test
 >Test the Individual building blocks(functions, components) in isolation
 >Projects typically contaion dozens or hundreds of Unit test cases
 >The most commin/Important test.
 
-## 2.Integration test
+##2.Integration test
 >Test the combination of multiple building blocks
 >Usually projects contain couple of integration tests
 >also important but focus on unit test cases most cases
 
-## 3.End to End test
+##3.End to End test
 >Test complete scenarios in your app as a user 
 >Projects usually contain only a few e2e tests.
 
