@@ -1,0 +1,13 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#) 	Notes
+---------------------------------------------------
+> my_details = {'name'=>'Vinith', 'language'=> 'Ruby'} // here the keys name and language is a string
+> simple_hash = {a:1, b:2, c:3} // here the keys a,b,c are symbols and not strings. it will print {:a=>1, :b=>2, :c=>3}
+> my_details.keys // will print ['name', 'language']
+> my_details.values // will print ['Vinith', 'Ruby']
+> simple_hash.each do |key, value|
+	puts "The key is #{key} and the value is #{value}"
+> simple_hash.select {|k,v| v.is_a?(String) } // will print the string values from the Hash
+> hash.each {|k,v| hash.delete(k) if v.is_a?(String)}

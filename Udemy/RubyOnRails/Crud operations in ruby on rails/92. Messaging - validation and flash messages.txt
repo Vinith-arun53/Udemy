@@ -1,0 +1,21 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#)	notes
+-------------------------------------------------
+#) we need to initialize the @article in the new action in controller before the form is getting submitted. because it will throw a nil class error.
+// we need to add validation in the Article controller file for the form validation.
+def create
+	@article  = Article.new(params)
+	if @article.save
+		flash[:notice] = "Article saved successfully"
+		redirect_to @article
+	else
+		render 'new' //will render new form if the form validation fails
+	end
+
+// on the main html file we need to add the flash
+(in application.html file)
+<% flash.each do |name,msg| %>
+	<%= msg %>
+<% end %>

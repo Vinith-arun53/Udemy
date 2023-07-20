@@ -1,0 +1,26 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#)	notes
+-------------------------------------------------
+//for editing we need to add edit and update actions in the Controller
+// we need to initiate the @article in the edit action before we submit the form
+
+def edit 
+	@article = Article.find(params[:id])
+end
+def update
+	@article = Article.find(params[:id])
+	if @article.update(params.require(:artticle).permit(:title, :description))
+		flash[:notice] = "Article was updated successfully"
+		redirect_to @article
+	else
+		render 'edit' //will render the edit action layout
+	end
+end
+
+(in routes file, add the edit and update routes)
+resources :articles, only: [:show, :index, :new, :create, :edit, :update]
+(in edit.html.erb file)
+//just copy paste the new.html file and edit
+<%= form_with(model: @article, local: true) do |f| %>

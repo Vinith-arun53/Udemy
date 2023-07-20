@@ -1,0 +1,57 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#)	notes
+-------------------------------------------------
+
+// we can just provide the model name because we are going to work with all of the CRUD routes
+(in routes file)
+
+resources :articles
+//add destroy method in the controller
+def destroy 
+	@article = Article.fine(params[:id])
+	if @article.destroy
+		redirect_to articles_path
+	end
+end
+
+
+
+
+
+
+
+{
+  "name": "percina",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/actiontext": "^6.0.2-2",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.2.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "bootstrap": "4.4.1",
+    "cocoon-js": "^0.0.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "prop-types": "15.8.1",
+    "react": "^16.13.1",
+    "react-datasheet": "^1.4.8",
+    "react-dom": "^16.13.1",
+    "react_ujs": "^2.6.1",
+    "select2": "^4.0.13",
+    "sortablejs": "^1.10.2",
+    "trix": "^1.0.0",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
+
+

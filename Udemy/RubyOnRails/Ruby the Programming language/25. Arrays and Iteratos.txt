@@ -1,0 +1,41 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#) 	Notes
+---------------------------------------------------
+a = [1, 2, 3 ] 
+puts a prints every element in seperate line
+
+p a.last //prints last element of the arrray
+
+#) range can be created using .. // 1..100
+> x=1..100
+> x.class // prints range
+> x.to_a // prints arrays of values [1,2,3,......,99,100]
+> x.to_a.shuffle // prints shuffled values 
+> x = (1..10).to_a
+> x.reverse // prints the values in reverse order but will not change the order in x
+> x.reverse! // called mutation. It changes the order in the x
+> x= ("a".."z").to_a // creates array of values from a to z
+> a = (1..10).to_a
+> a.unshift("Vinith") // adds Vinith in the first position
+> a.append(""Vinith") // adds Vinith in the last position
+> a.uniq  // prints unique values in the array
+> a.uniq! // removes duplicate values and saves the data
+> a.empty? // will return false
+> a.include?("Vinith") // to check the element is present in the array or not
+> b = a.pop // removes the last element of the array a and adds the removed element in array b
+> a.join // joins and prints all the element
+> b = a.join("-")
+> b.split("-")
+
+> %w( My name is vinith and this is ruby) // converts the space seperated string into array
+> x.each do |ele|
+	print ele+" "
+	end
+> x.each {|ele| print ele+" "}
+> x.select {|number| number.odd?} //prints the odd numbers
+> 
+
+ 
+
