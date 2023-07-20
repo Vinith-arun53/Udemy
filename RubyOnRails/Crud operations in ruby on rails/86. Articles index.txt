@@ -1,0 +1,9 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#)	notes
+-------------------------------------------------
+>>rails routes --expanded
+(in routes file)
+resources :article, only: [:show, :index] //now we need to add show and index controller function in ArticlesController file.
+(in ArticlesController file)

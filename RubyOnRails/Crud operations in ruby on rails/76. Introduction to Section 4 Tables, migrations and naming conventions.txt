@@ -1,0 +1,12 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+#)	notes
+--------------------------------------------------
+#) New migration can be generated using the  generate migration AddPartNumberToProducts command
+#) Make the changes you need in the migration file and the migrate
+>rails db:migrate
+#)The migration can be reverted using the db:rollback command
+>rails db:rollback
+#)We can make changes in the last maigration file and can migrate into the db using the db:migrate command. 
+<<but this is not a preferred way, because the db may go out of sync for other users>>

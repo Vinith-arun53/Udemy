@@ -1,0 +1,31 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+---------------------------------------------------
+>rails g migration add_user_id_to_articles
+def change
+	add_column :articls, :user_id, :int
+end
+>rails db:migrate
+>rails console
+>>Articl.all
+>> Article // to check the class
+>>article = Article.first
+>>articls.user // will return empty value because not added the association yet
+(in User model file)
+has_many :articles
+(in Article model)
+belongs_to :user
+>>reload!
+>>user = User.first
+>>user.articles
+>>user.articles << article  //article will be linked with the user
+>> article.user.username // to get the username using the article object
+>>exit
+
+ 
+
+176309610
+
+
+

@@ -1,0 +1,19 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+---------------------------------------------------
+
+(Adding validations inside user model)
+class User<ApplicationRecord
+	validates :username, presence: true, lenght:{minimum:3, maximum:25}, 	uniqueness:{case_sensitive:false}
+	VALID_EMAIL_REGEX = /|A[\w+|-.]+@[a-z\d\-.]\.[a-z]+\z/i
+	validates :email, presence: true, lenght: maximum:105}, format: {with: VALID_EMAIL_REGEX}
+end
+
+>>reload!  // used to reload the rails console
+>> user =  User.new(userename:"aa", email:"")
+>>user.valid?  // used to check the object is valid
+>>user.errors.full_messages // used to check the errors in the object
+
+
+

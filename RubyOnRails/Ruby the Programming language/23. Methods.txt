@@ -1,0 +1,7 @@
+>	command lines
+>> 	rails console command lines
+*	steps
+---------------------------------------------------
+
+The function should be defined before its called.
+The return keyword can only be used in the function.
