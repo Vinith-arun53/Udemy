@@ -1,5 +1,0 @@
->	command lines
->> 	rails console command lines
-*	steps
----------------------------------------------------
-10.eql?(10.0)  //returs false because its comparing types.
